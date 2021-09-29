@@ -61,7 +61,7 @@ public class UserDaoImpl implements UserDao {
 			rs = pstmt.executeQuery();
 			
 			rs.next();
-			flag = rs.getInt(1) + rs.getInt(2); // 2 : 로그인성공, 1: 패스워드틀림, 0: 아이디틀
+			flag = rs.getInt(1) + rs.getInt(2); // 2 : 로그인성공, 1: 패스워드틀림, 0: 아이디틀림
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
